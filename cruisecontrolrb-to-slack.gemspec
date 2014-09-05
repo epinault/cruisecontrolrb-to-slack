@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["emmanuel.pinault@zumobi.com"]
   spec.summary       = %q{A simple daemon to report last build status of projects and activities from cruisecontrol into Slack}
   spec.description   = %q{A simple daemon to report last build status of projects and activities from cruisecontrol into the awesome Slack (http://slack.com). It support multiple projects}
-  spec.homepage      = "http://github.com/epinault/cruisecontrolrb-to-hipchat"
+  spec.homepage      = "http://github.com/epinault/cruisecontrolrb-to-slack"
   spec.license       = "MIT"
   spec.required_ruby_version = '>= 1.9.3'
   
