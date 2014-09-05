@@ -17,6 +17,7 @@ GEM
       multi_xml (>= 0.5.2)
     json (1.8.1)
     mini_portile (0.6.0)
+    minitest (4.7.5)
     multi_xml (0.5.5)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
@@ -34,4 +35,5 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.6)
   cruisecontrolrb-to-slack!
+  minitest
   rake

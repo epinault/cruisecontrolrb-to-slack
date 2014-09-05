@@ -1,0 +1,5 @@
+<Projects>
+  <Project name="project1" category="" activity="CheckingModifications" lastBuildStatus="Failure" lastBuildLabel="5d1d1ed4529dfdc864129691e480990e5751981f.17" lastBuildTime="2014-06-10T23:48:02.0000000+0000" nextBuildTime="1970-01-01T00:00:00.000000-00:00" webUrl="http://host:3333/projects/project1"/>
+  <Project name="project2" category="" activity="CheckingModifications" lastBuildStatus="Success" lastBuildLabel="f4f1cf90acd6e535c9863bcf0dcaa526da9aebf0" lastBuildTime="2014-09-03T22:41:32.0000000+0000" nextBuildTime="1970-01-01T00:00:00.000000-00:00" webUrl="http://host:3333/projects/project2"/>
+  <Project name="project3" category="" activity="CheckingModifications" lastBuildStatus="Success" lastBuildLabel="2797ba93785cbe2a5dbfef52259ffdf95da9c775" lastBuildTime="2014-06-27T20:03:36.0000000+0000" nextBuildTime="1970-01-01T00:00:00.000000-00:00" webUrl="http://host:3333/projects/project3"/>
+</Projects>

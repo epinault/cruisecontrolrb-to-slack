@@ -1,0 +1,23 @@
+<rss version="2.0">
+  <channel>
+    <title>CruiseControl RSS feed for project1</title>
+    <link>http://host:3333/projects/project1</link>
+    <language>en-us</language>
+    <ttl>10</ttl>
+    <item>
+      <title>project1 build 5d1d1ed.18 failed</title>
+      <description>&lt;pre&gt;Build was manually requested.
+Revision ...5d1d1ed4529dfdc864129691e480990e5751981f committed by epinault &lt;epinault@someemail.com&gt; on 2014-03-19 17:56:36
+
+    Some cool commit message
+
+ README.rdoc |  261 -----------------------------------------------------------
+ 1 file changed, 261 deletions(-)
+
+&lt;/pre&gt;</description>
+      <pubDate>Thu, 04 Sep 2014 22:28:35 Z</pubDate>
+      <guid>http://host:3333/builds/project1/5d1d1ed4529dfdc864129691e480990e5751981f.18</guid>
+      <link>http://host:3333/builds/project1/5d1d1ed4529dfdc864129691e480990e5751981f.18</link>
+    </item>
+  </channel>
+</rss>
