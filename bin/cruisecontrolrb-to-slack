@@ -4,18 +4,16 @@ require 'cruisecontrolrb-to-slack'
 
 Dante.run('myapp') do |opts|
   raise 'Missing required Cruisecontrol host: export CC_HOST=<your_cc_host>' unless  host = ENV["CC_HOST"]
-  raise 'Missing required Slack api token, export SLACK_HOOK_TOKEN=<token>' unless token = ENV["SLACK_HOOK_TOKEN"]
-  raise 'Missing required Slack api token, export SLACK_TEAM=<team>' unless team = ENV["SLACK_TEAM"]
-  user = ENV["SLACK_USERNAME"] 
+  raise 'Missing required Slack webhook url, export SLACK_WEBHOOK_URL=<webhook url>' unless webhook = ENV["SLACK_WEBHOOK_URL"]
+  user = ENV["SLACK_USERNAME"]
   channel = ENV["SLACK_CHANNEL"]
 
   options = {cc_host: host, 
              cc_username: ENV["CC_USERNAME"] || "", 
              cc_password: ENV["CC_PASSWORD"] || "",
-             slack_team: team,
-             slack_hook_token: token,
+             slack_webhook_url: webhook,
              slack_channel: channel ,
-             slack_user: user, 
+             slack_user: user,
              polling_interval: ENV["POLLING_INTERVAL"] || 5}
 
   CruisecontrolrbToSlack::Runner.run(options)

@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "dante", "~> 0.2.0"
-  spec.add_dependency "slack-notifier", "~> 0.6.0"
+  spec.add_dependency "slack-notifier", "~> 1.0.0"
   spec.add_dependency "nokogiri", "~> 1.6.2"  
   spec.add_dependency "httparty", "~> 0.13.1"
   spec.add_dependency "rufus-scheduler"
