@@ -36,7 +36,6 @@ module CruisecontrolrbToSlack
 
     def check_statuses
       statuses = cc_client.fetch_statuses
-
       unless statuses.empty?     
 
         statuses.each do |status_hash|   
@@ -98,7 +97,7 @@ module CruisecontrolrbToSlack
     end
 
     def slack_client
-      @slack_client ||= SlackClient.new(config[:slack_team], config[:slack_hook_token], 
+      @slack_client ||= SlackClient.new(config[:slack_webhook_url],
                                 channel: config[:slack_channel], user: config[:slack_user])
     end
 

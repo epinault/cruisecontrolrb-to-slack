@@ -1,3 +1,5 @@
+Now supports the new Webhook method of interacting with Slack.
+
 This is a little app notifies Slack of any changes in the build status on your CruiseControl.rb install.
 It also support github as a source code repository to link to a commit. Other can easily be extended if needed
 
@@ -33,8 +35,7 @@ Make sure to define the following environment variable as they are required in e
 you `.profile` or `/etc/profile.d/cruisecontrolrc-to-slack.sh` (for all users)
 
 ```
-SLACK_TEAM=team                     # the team name (first part of the host in the incoming hook url)
-SLACK_HOOK_TOKEN=your_auth_token    # the incoming web_hook token
+SLACK_WEBHOOK_URL=webhook_url       # the webhook url you received from Slack
 CC_URL=your_cruise_control_url
 ```
 

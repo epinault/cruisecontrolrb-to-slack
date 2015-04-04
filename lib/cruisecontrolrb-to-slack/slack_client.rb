@@ -2,11 +2,11 @@ module CruisecontrolrbToSlack
   class SlackClient
     attr_reader :client
 
-    def initialize(team, token, options = {})
+    def initialize(webhook, options = {})
       user = options[:user] || 'cruisecontrol'   
       channel = options[:channel] || '#general'
 
-      @client = Slack::Notifier.new team, token, channel: channel, username: user
+      @client = Slack::Notifier.new webhook, channel: channel, username: user
     end
 
     # 
