@@ -25,6 +25,7 @@ git clone git@github.com:epinault/cruisecontrolrb-to-slack.git
 cd cruisecontrolrb-to-slack
 bundle install
 rake build
+gem install ./pkg/cruisecontrolrb-to-slack-0.2.0.gem
 ```
 
 ## Configuration
@@ -36,7 +37,7 @@ you `.profile` or `/etc/profile.d/cruisecontrolrc-to-slack.sh` (for all users)
 
 ```
 SLACK_WEBHOOK_URL=webhook_url       # the webhook url you received from Slack
-CC_URL=your_cruise_control_url
+CC_HOST=your_cruise_control_host    # (e.g builder.cruisecontrol.com)
 ```
 
 The following are optionals
@@ -50,8 +51,8 @@ CC_PASSWORD=your_password
 
 ```
 SLACK_USERNAME=your_username     # Name to show for the message coming in  [Default: cruisecontrol]
-SLACK_CHANNEL=your_channel       # the channel to receive notification  [Default: #general]
-POLLING_INTERVAL							   # polling interval in minutes. defaults to 1 minute.
+SLACK_CHANNEL=your_channel       # the channel to receive notification  [Default: #general] (include the '#')
+POLLING_INTERVAL							   # polling interval in seconds. defaults to 5 seconds.
 ```
 
 ## Running
